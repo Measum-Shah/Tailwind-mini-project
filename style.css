@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: sans-serif;
+}
+
+#bar1 {
+    height: 5px;
+    background-color: gray;
+    position: relative;
+    width: 80%;
+  }
+
+  #bar1::after {
+    content: "";
+    height: 5px;
+    background-color: orangered;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .bar1 {
+    height: 3px;
+    background-color: white;
+    position: relative;
+    width: 80%;
+  }
+
+  .bar1::after {
+    content: "";
+    height: 3px;
+    background-color: orangered;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  
+
+
